@@ -7,6 +7,11 @@ import  { Suspense } from 'react';
 import  {RevenueChartSkeleton}  from '@/app/ui/skeletons';
 import { LatestInvoicesSkeleton} from '@/app/ui/skeletons';
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
+
  
 export default async function Page() {
   const latestInvoices = await fetchLatestInvoices();
