@@ -86,7 +86,7 @@ export default function LoginForm() {
         </div>
         {/* // In app/ui/login-form.tsx, below the error div */}
         <div className="mt-4 text-center text-sm">
-          Don't have an account?{" "}
+  Don&apos;t have an account?{" "}
           <Link
             href="/signup"
             className="font-medium text-blue-600 hover:underline"

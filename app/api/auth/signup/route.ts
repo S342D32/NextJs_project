@@ -28,7 +28,7 @@ const userId = crypto.randomUUID();
     `;
 
     return NextResponse.json({ success: true });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error(err);
     return NextResponse.json({ error: 'Server error' }, { status: 500 });
   }
